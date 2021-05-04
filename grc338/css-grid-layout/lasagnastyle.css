@@ -1,0 +1,88 @@
+/*CSS DOCUMENT*/
+
+
+html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,time, mark, audio, video {margin: 0;	padding: 0;	border: 0;	vertical-align: baseline;} /*My edited version of the Eric Meyer’s reset tool. Feel free to keep it or delete it. */
+
+img {
+    width: 100%; /*Please leave this line.*/
+}
+
+/*By the way, when we use the slash-asterisk combo, it’s a comment on the CSS and it’s meant for human beings. The machine knows it is not supposed to process anything until it finds a asterisk-slash combo that ends the comment on the CSS. */
+
+h1{
+    font-family: Arial;
+    font-size: 2.20em;
+    font-weight: 200;
+    text-transform: uppercase;
+    margin: 1em 0 0.5em 0;
+    color: rgb(93, 150, 77);
+}
+
+h2{
+    font-family: Arial;
+    font-size: 1.20em;
+    font-weight: 100;
+    margin: 0.5em 0;
+}
+
+h3{
+    color: rgb(74, 96, 67);
+    font-family: Arial;
+    text-transform: uppercase;
+    margin: 2em 0 0.25em 0;
+}
+
+body{
+    margin: 2.5em;
+}
+
+figure{
+    margin: 1em 0;
+}
+figcaption{
+    font-family: Arial;
+    font-size: .85em;
+    font-weight: 100;
+    margin: 0 1em;
+}
+ul, ol{
+    margin: 1em;
+}
+
+li{
+    margin: 0 0 0.5em 0;
+    font-family: Arial;
+    font-size: 1em;
+}
+
+h6{
+    font-family: Arial;
+    font-size: 1em;
+    color: rgb(93, 150, 77);
+    margin: 2em 0;
+}
+
+div.container{
+    display: grid;
+    max-width: 40em;
+    margin: auto;
+}
+
+header{
+    display: grid;
+    grid-column: 1/2;
+}
+figure{
+    display: grid;
+    grid-template-columns: 65% 35%;
+}
+
+main{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+footer{
+    display: grid;
+    grid-column: 1/2;
+}
