@@ -1,0 +1,77 @@
+/*CSS DOCUMENT*/
+
+img {
+    width: 100%; 
+}
+figure{
+    max-width: 70em;
+    margin: auto;
+}
+
+div.container {
+    max-width: 70em;
+    margin: auto;
+}
+
+body{
+    background-color:#F5F1D4;
+}
+nav ul{
+    margin: 0 0 5em 0;
+    text-align: right;
+    padding: .5em;
+    background-color: #F2A74B;
+}
+
+nav ul li{
+    display: inline;
+    list-style-type: none;
+    margin-left: 1em;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+nav ul li a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+    color: #F2D16D;
+}
+h2{
+    color: #97A962;
+    font-family: brandon-grotesque, sans-serif;
+    margin: 1em 0em 0em 0em;
+}
+ul{
+    padding: 0;
+}
+h1{
+    margin: 1em 3em 1em 0;
+    width: 50%;
+}
+
+h3{
+    color: rgb(255, 255, 255);
+    padding: .5em;
+    background-color: #B08A4D;
+    font-family: brandon-grotesque, sans-serif;
+}
+h4{
+    font-family: brandon-grotesque, sans-serif;
+    margin: 2em 0em 0em 0em;
+}
+p{
+    font-family: brandon-grotesque, sans-serif;
+    margin: .5em 0em .5em 0em;
+}
+
+p.price{
+    font-family: brandon-grotesque, sans-serif;
+    color: #B08A4D;
+}
+/*Please don’t change this CSS stylesheet for the content hierarchy assginment */
