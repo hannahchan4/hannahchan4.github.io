@@ -71,7 +71,7 @@ aside {
     display: block;
 }
 
-section {
+section{
     max-width: 40em;
     margin: 0 auto 3em;
 }
@@ -106,17 +106,17 @@ figcaption {
     }
 
     main {
-        grid-column: 1/2;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
+        grid-column: 1/2;
         grid-gap: 0 1em;
     }
 
     section.mainstory {
-        grid-column: 2/4;
-        grid-row: 1/3;
         display: flex;
         flex-direction: column;
+        grid-column: 2/4;
+        grid-row: 1/3;
     }
 
     section.mainstory figure {
@@ -125,12 +125,16 @@ figcaption {
         flex-direction: column;
     }
 
+    aside {
+        grid-column: 2/3;
+    }
+
     section.mainstory figure div {
         flex: 1 0 16em;
         background-image: url(greenclean.jpg);
+        background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        background-position: center;
     }
 
     section.mainstory figure div img {
@@ -142,18 +146,14 @@ figcaption {
         flex: 0 0 3em;
     }
 
+    section.mainstory p {
+        flex: 0 0 auto;
+        margin: 0;
+    }
+
     section.mainstory h3 {
         flex: 0 0 auto;
         margin: 0;
-    }
-
-  section.mainstory p {
-        flex: 0 0 auto;
-        margin: 0;
-    }
-
-    aside {
-        grid-column: 2/3;
     }
 }
 
