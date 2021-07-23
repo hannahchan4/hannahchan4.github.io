@@ -7,6 +7,11 @@ h1 {
     width: 10em;
 }
 
+a {
+    text-decoration: none;
+    color: #3D3D3D;
+}
+
 h2 {
     color: #3D3D3D;
     margin: 1em 0em 0.5em 0em;
@@ -21,11 +26,6 @@ h3 {
     font-family: gitan-latin, sans-serif;
     font-weight: 600;
     font-style: normal;
-}
-
-a {
-    text-decoration: none;
-    color: #3D3D3D;
 }
 
 nav ul {
@@ -54,8 +54,89 @@ nav ul li a:hover {
 }
 
 div.container {
+    max-width: 80em;
+    margin: auto;
+}
+
+div.container-gallery {
     max-width: 70em;
     margin: auto;
+}
+
+div.container-stories {
+    max-width: 70em;
+    margin: auto;
+}
+
+figure.photogallery {
+    width: 70%;
+    position: absolute;
+    left: 100%;
+    transition: left 400ms, opacity 400ms;
+    opacity: 0;
+    margin: auto;
+}
+
+main.gallery {
+    width: 100%;
+    margin: auto;
+    position: relative;
+    padding-bottom: calc(56% + 3em);
+    overflow: hidden;
+}
+
+nav.nav-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1em 0em 0em 0em;
+}
+
+label {
+    flex: 1 0 3em;
+}
+
+input:nth-of-type(1):checked ~ main.gallery figure.photogallery:nth-of-type(1),
+input:nth-of-type(2):checked ~ main.gallery figure.photogallery:nth-of-type(2),
+input:nth-of-type(3):checked ~ main.gallery figure.photogallery:nth-of-type(3),
+input:nth-of-type(4):checked ~ main.gallery figure.photogallery:nth-of-type(4),
+input:nth-of-type(5):checked ~ main.gallery figure.photogallery:nth-of-type(5),
+input:nth-of-type(6):checked ~ main.gallery figure.photogallery:nth-of-type(6),
+input:nth-of-type(7):checked ~ main.gallery figure.photogallery:nth-of-type(7),
+input:nth-of-type(8):checked ~ main.gallery figure.photogallery:nth-of-type(8) {
+    left: 0;
+    opacity: 1;
+}
+
+input {
+	display: none;
+}
+
+section {
+    max-width: 40em;
+	margin-bottom: 0 auto 3m;
+}
+
+.with-image {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.no-image {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.mainstory {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+figure {
+    margin: 0;
+}
+
+img {
+    width: 100%;
 }
 
 p {
@@ -67,23 +148,6 @@ p {
     color: #3D3D3D;
 }
 
-aside {
-    display: block;
-}
-
-section{
-    max-width: 40em;
-    margin: 0 auto 3em;
-}
-
-figure {
-    margin: 0;
-}
-
-img {
-    width: 100%;
-}
-
 figcaption {
     font-family: neue-haas-unica, sans-serif;
     font-weight: 300;
@@ -93,12 +157,18 @@ figcaption {
     color: #575555
 }
 
-@media screen and (min-width: 60em) {
 
+@media screen and (min-width: 60em) {
     div.container {
         display: grid;
         grid-template-columns: 3fr 1fr;
-        grid-gap: 0 2em;
+        grid-gap: 0 1.5em;
+    }
+
+    div.container-stories {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        grid-gap: 0 1.5em;
     }
 
     header {
@@ -106,44 +176,23 @@ figcaption {
     }
 
     main {
+        grid-column: 1/2;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-column: 1/2;
-        grid-gap: 0 1em;
-    }
-
-    section.mainstory {
-        display: flex;
-        flex-direction: column;
-        grid-column: 2/4;
-        grid-row: 1/3;
-    }
-
-    section.mainstory figure {
-        flex: 1 0 16em;
-        display: flex;
-        flex-direction: column;
+        grid-gap: 0 2em;
     }
 
     aside {
         grid-column: 2/3;
     }
 
-    section.mainstory figure div {
-        flex: 1 0 16em;
-        background-image: url(greenclean.jpg);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
+    section.mainstory {
+        grid-column: 2/4;
+        grid-row: 1/2;
     }
 
-    section.mainstory figure div img {
-		height: 100%;
-		opacity: 0;
-    }
-
-    section.mainstory figure figcation {
-        flex: 0 0 3em;
+    section.mainstory h3 {
+        margin: 0.25em auto 0.25em;
     }
 
     section.mainstory p {
@@ -151,10 +200,4 @@ figcaption {
         margin: 0;
     }
 
-    section.mainstory h3 {
-        flex: 0 0 auto;
-        margin: 0;
-    }
 }
-
-
