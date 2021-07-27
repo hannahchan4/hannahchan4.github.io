@@ -103,36 +103,35 @@ div.container {
 }
 
 div.container-gallery {
-    max-width: 70em;
+    max-width: 55em;
     margin: auto;
 }
 
 div.container-stories {
-    max-width: 70em;
+    max-width: 55em;
     margin: auto;
 }
 
 figure.photogallery {
-    width: 70%;
+    width: 100%;
     position: absolute;
     left: 100%;
     transition: left 400ms, opacity 400ms;
     opacity: 0;
-    margin: auto;
 }
 
 main.gallery {
     width: 100%;
     margin: auto;
     position: relative;
-    padding-bottom: calc(56% + 3em);
+    padding-bottom: calc(70% + 4em);
     overflow: hidden;
 }
 
 nav.nav-gallery {
     display: flex;
     flex-wrap: wrap;
-    margin: 1em 0em 0em 0em;
+    margin: 2em 0em 0em 0em;
 }
 
 label {
